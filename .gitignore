@@ -1,0 +1,25 @@
+# Local config and secrets
+Login-1/dbh.inc.php
+Login-1/config_session.inc.php
+Login-1/*.env
+*.log
+
+# PHP vendor and cache (if added later)
+vendor/
+composer.lock
+
+# IDE/editor settings
+.vscode/
+*.code-workspace
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*~
+
+# Optional user-specific files
+.idea/
+.DS_Store

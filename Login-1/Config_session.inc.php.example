@@ -1,0 +1,31 @@
+<?php
+// Rename this file to config_session.inc.php and customize the session settings
+// for your local environment. Keep the real config_session.inc.php out of version control.
+
+// session configuration for secure local testing
+ini_set('session.use_only_cookies', 1);
+ini_set('session.use_strict_mode', 1);
+
+session_start();
+
+session_set_cookie_params([
+    'lifetime' => 1800,
+    'domain' => 'localhost',
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true,
+]);
+
+function regenerate_session_id() {
+    session_regenerate_id();
+    $_SESSION['last_regeneration'] = time();
+}
+
+function regenerate_session_id_loggedin() {
+    session_regenerate_id();
+    $userID = $_SESSION['acount_id'];
+    $newSessionId = session_create_id();
+    $sessionId = $newSessionId . '_' . $userID;
+    session_id($sessionId);
+    $_SESSION['last_regeneration'] = time();
+}

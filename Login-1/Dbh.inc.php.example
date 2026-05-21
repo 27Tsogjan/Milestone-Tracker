@@ -1,0 +1,16 @@
+<?php
+// Rename this file to dbh.inc.php and fill in your local database credentials.
+// Keep the real dbh.inc.php out of version control.
+
+$host = "localhost";
+$dbname = "project";
+$dbusername = 'your_db_username';
+$dbpassword = 'your_db_password';
+$dsn = "mysql:host=$host;dbname=$dbname";
+
+try {
+    $pdo = new PDO($dsn, $dbusername, $dbpassword);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}

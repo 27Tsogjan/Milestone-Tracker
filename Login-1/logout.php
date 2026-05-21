@@ -1,0 +1,13 @@
+<?php
+    require 'login_contr.inc.php';
+    logout();
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logout</title>
+    </head>
+    <body>
+        <p>You have successfully logged out</p>
+    </body>
+</html>

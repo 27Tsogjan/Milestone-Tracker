@@ -1,0 +1,58 @@
+#goals{
+    width: 100%; 
+    height: 100px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 10px; 
+    font-size: 14px; 
+    resize: none; 
+}
+#cEntry{
+    width: 95%;
+    height: 100px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none; 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#CrtBtn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+h3{
+    padding: 5px;
+    background-color: rgb(44, 69, 93);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    color: aliceblue;
+}
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    margin: 10px; 
+    padding: 15px; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
